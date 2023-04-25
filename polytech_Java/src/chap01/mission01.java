@@ -1,4 +1,4 @@
-package chapter01;
+package chap01;
 // 미션01:주어진 섭씨 온도를 화씨 온도로 바꾸는 CtoF 메소드를 작성하라
 // F = (9/5)*C + 32
 // C : 15도 라고 가정

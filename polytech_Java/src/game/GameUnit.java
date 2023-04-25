@@ -24,8 +24,8 @@ public class GameUnit {
 		GameUnit.bossPower = bossPower - power;
 	}
 	
+	//코인
 	void Coin(int coin) {
-		
 		this.coin = coin;
 	}
 	
@@ -36,25 +36,27 @@ public class GameUnit {
 		GameUnit unit1 = new GameUnit("데마시아");
 		GameUnit unit2 = new GameUnit("녹서스");
 		GameUnit unit3 = new GameUnit("아이오니아");
-		coin = 1;
 		
+		coin = 1;	//처음 주어진 코인수
+		
+		Thread.sleep(1000);
 		System.out.println("@------------------------------------------------------------------------------------------@");
 		System.out.println("@@----------------------------------------------------------------------------------------@@");
-		Thread.sleep(1000);
+		Thread.sleep(600);
 		System.out.print("@@@---------------------------------");
-		Thread.sleep(1000);
+		Thread.sleep(600);
 		System.out.print(" 하 ");
-		Thread.sleep(1000);
+		Thread.sleep(600);
 		System.out.print(" 이 ");
-		Thread.sleep(1000);
+		Thread.sleep(600);
 		System.out.print(" 테 ");
-		Thread.sleep(1000);
+		Thread.sleep(600);
 		System.out.print(" 크 ");
-		Thread.sleep(1000);
+		Thread.sleep(600);
 		System.out.print(" 랜 ");
-		Thread.sleep(1000);
+		Thread.sleep(600);
 		System.out.print(" 드 ");
-		Thread.sleep(1000);
+		Thread.sleep(600);
 		System.out.print("---------------------------------@@@");
 		System.out.println();
 		Thread.sleep(1000);
@@ -80,6 +82,7 @@ public class GameUnit {
 		while(0<coin) {
 			System.out.print("원하는 진영을 선택 해주세요.(데마시아 : 1 / 녹서스 : 2 / 아이오니아 : 3) : ");
 			int a = sc.nextInt();
+			GameUnit.bossPower = 12345;
 			
 			if (a == 1) {
 				System.out.println("보유 코인 : " + coin);

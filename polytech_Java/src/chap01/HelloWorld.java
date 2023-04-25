@@ -1,4 +1,4 @@
-package chapter01;
+package chap01;
 // 주석   컨트롤+/ 바로 주석처리
 /* 영역주석 */
 // 실행: 컨트롤+F11

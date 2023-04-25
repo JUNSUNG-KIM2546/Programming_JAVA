@@ -1,4 +1,4 @@
-package chapter01;
+package chap01;
 // 정수형의 2개의 input parameter를 입력받은 후
 // 더 큰 수를 return 하는 max 메소드를 작성
 
