@@ -32,8 +32,8 @@ public class Circle1_1 {
 //		System.out.println();
 //		System.out.println(c.getArea());
 		
-		Circle pizza = new Circle("피자",10);
-		Circle donut = new Circle("도넛",2);
+		Circle4_1 pizza = new Circle4_1("피자",10);
+		Circle4_1 donut = new Circle4_1("도넛",2);
 		System.out.println(Circle1_1.Circle_name);
 		System.out.println("피자의 크기는"+pizza.getArea());
 		System.out.println("도넛의 크기는"+donut.getArea());

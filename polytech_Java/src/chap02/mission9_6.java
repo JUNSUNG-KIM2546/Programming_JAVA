@@ -1,22 +1,22 @@
-//package chap02;
+package chap02;
 
 import java.util.Scanner;
-//컨트롤+쉬프트+O 해서 임포트 불러오기 
+//而⑦듃濡�+�돩�봽�듃+O �빐�꽌 �엫�룷�듃 遺덈윭�삤湲� 
 
 public class mission9_6 {
 
 	public static void main(String[] args) {	
 	Scanner scan = new Scanner(System.in);		
-	// 위랑 같은거
-	//Scanner scan;				// Constructor(생성자)-메소드,생성을 위한, 생성자명==클레스명, scan- 객체명
-	//new Scanner(System.in);	// 하나의 메소드(생성자 메소드), new- 생성해줘, Scanner- 생성자명, (System.in)- 표준입력스트림(입력버퍼)
-	 							// new가 있어서 공간할당(생성)가능
+	// �쐞�옉 媛숈�嫄�
+	//Scanner scan;				// Constructor(�깮�꽦�옄)-硫붿냼�뱶,�깮�꽦�쓣 �쐞�븳, �깮�꽦�옄紐�==�겢�젅�뒪紐�, scan- 媛앹껜紐�
+	//new Scanner(System.in);	// �븯�굹�쓽 硫붿냼�뱶(�깮�꽦�옄 硫붿냼�뱶), new- �깮�꽦�빐以�, Scanner- �깮�꽦�옄紐�, (System.in)- �몴以��엯�젰�뒪�듃由�(�엯�젰踰꾪띁)
+	 							// new媛� �엳�뼱�꽌 怨듦컙�븷�떦(�깮�꽦)媛��뒫
 	
-	//(10번 문제) 원의 정보를 받기 위해 키보드로부터 원의 중심을 나타내는 한 점과 반지름을 입력 받는다.
-	//두 개의 원을 입력받고 두 원이 서로 겹치는지 판단하여 출력하라.
-	//Scanner 와 if조건,산술식 사용
+	//(10踰� 臾몄젣) �썝�쓽 �젙蹂대�� 諛쏄린 �쐞�빐 �궎蹂대뱶濡쒕��꽣 �썝�쓽 以묒떖�쓣 �굹���궡�뒗 �븳 �젏怨� 諛섏�由꾩쓣 �엯�젰 諛쏅뒗�떎.
+	//�몢 媛쒖쓽 �썝�쓣 �엯�젰諛쏄퀬 �몢 �썝�씠 �꽌濡� 寃뱀튂�뒗吏� �뙋�떒�븯�뿬 異쒕젰�븯�씪.
+	//Scanner �� if議곌굔,�궛�닠�떇 �궗�슜
 	
-	System.out.print("첫번째 원의 중심과 반지름을 입력하세요. : ");
+	System.out.print("泥ル쾲吏� �썝�쓽 以묒떖怨� 諛섏�由꾩쓣 �엯�젰�븯�꽭�슂. : ");
 	var X = scan.nextDouble();
 	var Y = scan.nextDouble();
 	var C = scan.nextDouble();
@@ -26,7 +26,7 @@ public class mission9_6 {
 	double Yp = Y+C;
 	double Ym = Y-C;
 
-	System.out.print("두번째 원의 중심과 반지름을 입력하세요. : ");
+	System.out.print("�몢踰덉㎏ �썝�쓽 以묒떖怨� 諛섏�由꾩쓣 �엯�젰�븯�꽭�슂. : ");
 	var x = scan.nextDouble();
 	var y = scan.nextDouble();
 	var c = scan.nextDouble();
@@ -37,15 +37,15 @@ public class mission9_6 {
 	double ym = y-c;
 
 
-	//int grade = 0;		// String 문자열		int 정수형
+	//int grade = 0;		// String 臾몄옄�뿴		int �젙�닔�삎
 	
-	// 분기적 if문
+	// 遺꾧린�쟻 if臾�
 	if((Xp>xm) && (Xm<xp) || (Xp>ym) && (Xm<yp))
 		{ if((Yp<xm) && (Ym>xp) || (Yp>ym) && (Ym<yp))
-			System.out.println("두 원은 서로 겹칩니다.");
+			System.out.println("�몢 �썝�� �꽌濡� 寃뱀묩�땲�떎.");
 		}
 	else
-		System.out.println("두 원은 서로 겹치지 않습니다.");
+		System.out.println("�몢 �썝�� �꽌濡� 寃뱀튂吏� �븡�뒿�땲�떎.");
 	
 	
 	scan.close();

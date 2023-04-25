@@ -1,24 +1,24 @@
 package chap04;
 
-class Student1 //extends Shape{
+public class Student4_1 {//extends Shape{
 	private String dept;
 	private int id;
-	
+
 	//소스 => 겟터스 셋터스, 유징 필드
 	
-	public Student1() {
+//	public Student1() {
 //		super("");
 //		System.out.println(super.name);
-	}
+//	}
 	
-	public Student1(String dept) {
-		this.dept = dept;
-	}
-
-	public Student1(String dept, int id) {
-		this.dept = dept;
-		this.id = id;
-	}
+//	public Student1(String dept) {
+//		this.dept = dept;
+//	}
+//
+//	public Student1(String dept, int id) {
+//		this.dept = dept;
+//		this.id = id;
+//	}
 	
 	
 	public String getDept() {
@@ -40,5 +40,5 @@ class Student1 //extends Shape{
 		return "Student1 [dept=" + dept + ", id=" + id + "]";
 	} 
 	
-	
-}
+}	
+

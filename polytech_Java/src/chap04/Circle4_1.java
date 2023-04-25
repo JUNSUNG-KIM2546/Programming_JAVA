@@ -1,7 +1,7 @@
 // 04.04
 package chap04;
 
-public class Circle {
+public class Circle4_1 {
 	//필드 : 속성 =============================================
 	public double radius;
 	public String name;
@@ -9,8 +9,8 @@ public class Circle {
 	
 	//메소드 : 행위 =============================================
 	//생성자 메소드
-	public Circle(){}	//Default 생성자
-	public Circle(String name, double radius) {
+	public Circle4_1(){}	//Default 생성자
+	public Circle4_1(String name, double radius) {
 		this.name = name;
 		this.radius = radius;
 	}
@@ -20,10 +20,10 @@ public class Circle {
 	}
 	//main 메소드
 	public static void main(String aragw[]) {
-		Circle c = new Circle("원2", 4);
+		Circle4_1 c = new Circle4_1("원2", 4);
 		
 		//위,아래 서로 다른 영역
-		Circle c1 = new Circle("원1", 3);
+		Circle4_1 c1 = new Circle4_1("원1", 3);
 		System.out.printf("%.3f",c1.getArea());
 		System.out.println();
 		System.out.println(c.getArea());
