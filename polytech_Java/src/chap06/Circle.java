@@ -15,6 +15,8 @@ public class Circle {
 		else
 			return false;
 	}
+	
+	
 
 		public static void main(String[] args) {
 			Circle a = new Circle(2, 3, 5);		// 중심 (2,3)에 반지름 5인 원

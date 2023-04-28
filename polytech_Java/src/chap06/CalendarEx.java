@@ -5,7 +5,8 @@ import java.util.Calendar;
 public class CalendarEx {
 	
 	public static void Calendar(String msg, Calendar cal, String mm) {
-		int HH = cal.get(Calendar.HOUR);
+		int HH = cal.get(Calendar.HOUR); //12시간
+		int HoD = cal.get(Calendar.HOUR_OF_DAY); //24시간
 		int MM = cal.get(Calendar.MINUTE);
 		int AP = cal.get(Calendar.AM_PM);
 		
@@ -26,6 +27,7 @@ public class CalendarEx {
 
 	public static void main(String[] args) {
 		
+		Calendar nows = Calendar.getInstance();
 		Calendar now = Calendar.getInstance();
 		Calendar now1 = Calendar.getInstance();
 		
@@ -33,7 +35,8 @@ public class CalendarEx {
 		now1.set(Calendar.HOUR,12);
 		now1.set(Calendar.MINUTE,52);
 		
-		Calendar("현재 시간은 ",now,"분 입니다.");
+		Calendar("현재 시간은 ",now,"분 입니다.");	//12시간
+		Calendar("현재 시간은 ",nows,"분 입니다.");	//24시간
 		Calendar("설정 시간은 ",now1,"분 입니다.");
 	}
 
