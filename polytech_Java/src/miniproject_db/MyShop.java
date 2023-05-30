@@ -1,4 +1,4 @@
-package miniproject;
+package miniproject_db;
 
 import java.util.ArrayList;
 import java.util.Scanner;

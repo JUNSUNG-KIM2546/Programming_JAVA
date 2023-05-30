@@ -1,4 +1,4 @@
-package miniproject;
+package miniproject_db;
 
 public interface IShop {
 	// setTitle : ºÓ«Œ∏Ù¿« ¡¶∏Ò ¥ﬁ±‚

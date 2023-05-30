@@ -1,10 +1,10 @@
 package miniproject;
 
-public class Cellphone extends Product{
+public class CellPhone extends Product{
 	
 	private String carrier;
 	
-	public Cellphone(String pname, int price, String carrier) {
+	public CellPhone(String pname, int price, String carrier) {
 		this.pname = pname;
 		this.price = price;
 		this.carrier = carrier;
