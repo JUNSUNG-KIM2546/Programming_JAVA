@@ -19,7 +19,7 @@ public class DBConnect {
 			
 		// 0. JDBC Driver, URL, ID, PW 설정
 		// 0. SQL 문 정의
-		String sql = "INSERT INTO test VALUES (? , ?)";
+		String sql = "INSERT INTO user VALUES (? , ?)";
 		
 		// DB 연결에 필요한 객체 선언
 		Connection con = null;

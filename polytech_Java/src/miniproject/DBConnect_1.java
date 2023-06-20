@@ -39,7 +39,7 @@ public class DBConnect_1 {
 		// 0. JDBC Driver, URL, ID, PW 설정
 		// 0. SQL 문 정의
 //		String sql = "INSERT INTO test VALUES (? , ?)";
-		String sql = "SELECT * FROM test";	//테이블 조회
+		String sql = "SELECT * FROM user";	//테이블 조회
 		
 		// DB 연결에 필요한 객체 선언
 		Connection con = null;
@@ -68,9 +68,9 @@ public class DBConnect_1 {
 		ResultSet rs = pstmt.executeQuery();
 		while(rs.next()) {
 			t = new Test();	//매번 새로운 값을 t에 넣어라 선언(new)
-			System.out.println(rs.getString("uname") + ", " + rs.getString("email"));
-			t.setUname(rs.getString("uname"));
-			t.setEmail(rs.getString("email"));
+			System.out.println(rs.getString("uid") + ", " + rs.getString("uname"));
+			t.setUname(rs.getString("uid"));
+			t.setEmail(rs.getString("uname"));
 			Vtest.add(t);	// t값을 벡터에 넣어라
 			for(Test tt : Vtest ) {
 				System.out.println(tt);
